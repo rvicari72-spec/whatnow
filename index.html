@@ -669,9 +669,9 @@ async function handleSubmit() {
 
 function handleShare() {
   const url = window.location.href.split('?')[0].split('#')[0];
-  const text = encodeURIComponent('I thought you might find this useful — a free practical guide for senior professionals navigating a job loss. You\'ll need to register to download it: ' + url);
+  const text = encodeURIComponent('I thought you might find this useful — a free practical guide for senior professionals navigating a job loss. You just need to enter name and email to download it: ' + url);
   const emailSubject = encodeURIComponent('A guide worth reading — I just lost my (corporate leadership) job. What now?');
-  const emailBody = encodeURIComponent('Hi,\n\nI came across this free guide and thought it might be useful to you:\n\n"I just lost my (corporate leadership) job. What now?" by Ric Vicari\n\nYou can download it here (quick registration required):\n' + url + '\n\nHope it helps.');
+  const emailBody = encodeURIComponent('Hi,\n\nI came across this free guide and thought it might be useful to you:\n\n"I just lost my (corporate leadership) job. What now?" by Ric Vicari\n\nYou can download it here after entering name and email:\n' + url + '\n\nHope it helps.');
 
   document.getElementById('share-url').value = url;
   document.getElementById('wa-btn').href = 'https://wa.me/?text=' + text;
